@@ -7,9 +7,9 @@
    5. Substitua os valores abaixo
    ──────────────────────────────────────────────────────────── */
 
-const EMAILJS_PUBLIC_KEY  = 'SUA_PUBLIC_KEY_AQUI';
-const EMAILJS_SERVICE_ID  = 'SUA_SERVICE_ID_AQUI';
-const EMAILJS_TEMPLATE_ID = 'SEU_TEMPLATE_ID_AQUI';
+const EMAILJS_PUBLIC_KEY  = 'j5E_X59Jyz1iE2UYh';
+const EMAILJS_SERVICE_ID  = 'service_dknr5gf';
+const EMAILJS_TEMPLATE_ID = 'template_fldctjc';
 
 document.addEventListener('DOMContentLoaded', function () {
 
