@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com Naasson Vieira — Analista de TI e Web Developer.">
+  <title>Naasson Vieira | Contato</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ── Navigation ────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <span class="nav-logo">naasson<span>.</span>dev</span>
+      <ul class="nav-links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Page Hero ─────────────────────────────────────── -->
+  <section class="hero" style="padding:64px 0 80px">
+    <div class="container">
+      <p class="section-label" style="color:var(--blue-light);margin-bottom:16px">Contato</p>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:600;color:var(--white);letter-spacing:-.02em;margin-bottom:12px">
+        Vamos conversar
+      </h1>
+      <p style="color:var(--slate);font-size:1.05rem;max-width:520px;line-height:1.65">
+        Oportunidade de trabalho, projeto freelance ou só uma troca de ideia sobre tecnologia —
+        escolha o canal e manda ver.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Main ──────────────────────────────────────────── -->
+  <main>
+    <div class="container">
+      <section class="page-section">
+
+        <div class="contact-layout">
+
+          <!-- Form Side -->
+          <div class="contact-form-wrapper">
+            <p class="section-label">Formulário</p>
+            <h2 class="section-title" style="margin-bottom:8px">Manda sua mensagem</h2>
+            <p class="section-desc" style="margin-bottom:32px">
+              Selecione o motivo e preencha os campos — responderei em até 24h.
+            </p>
+
+            <!-- Type Selector -->
+            <div class="type-selector" id="typeSelector">
+              <button class="type-btn" data-type="job" data-subject="Oportunidade de Trabalho">
+                <span class="type-icon">💼</span>
+                <span class="type-label">Oportunidade</span>
+              </button>
+              <button class="type-btn" data-type="project" data-subject="Orçamento de Projeto">
+                <span class="type-icon">🚀</span>
+                <span class="type-label">Projeto</span>
+              </button>
+              <button class="type-btn" data-type="chat" data-subject="Conversa sobre Tecnologia">
+                <span class="type-icon">💬</span>
+                <span class="type-label">Tech talk</span>
+              </button>
+            </div>
+
+            <form id="contactForm" novalidate>
+              <input type="hidden" id="subject" name="subject" value="">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" placeholder="Conte um pouco sobre o que você tem em mente..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                <span id="btnText">Enviar mensagem</span>
+                <span id="btnIcon">→</span>
+              </button>
+
+              <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <!-- Info Side -->
+          <div class="contact-info">
+
+            <p class="section-label">Contato direto</p>
+            <h2 class="section-title" style="font-size:1.3rem;margin-bottom:24px">Canais disponíveis</h2>
+
+            <div class="direct-links">
+              <a href="mailto:naassonvs@gmail.com" class="direct-card">
+                <span class="direct-icon">✉️</span>
+                <div>
+                  <div class="direct-title">E-mail</div>
+                  <div class="direct-value">naassonvs@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="https://wa.me/5531992322616?text=Olá%20Naasson%2C%20vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20conversar!"
+                 target="_blank" rel="noopener" class="direct-card">
+                <span class="direct-icon">📱</span>
+                <div>
+                  <div class="direct-title">WhatsApp</div>
+                  <div class="direct-value">+55 (31) 99232-2616</div>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/naassonsilva/" target="_blank" rel="noopener" class="direct-card">
+                <span class="direct-icon">💼</span>
+                <div>
+                  <div class="direct-title">LinkedIn</div>
+                  <div class="direct-value">/in/naassonsilva</div>
+                </div>
+              </a>
+
+              <a href="https://github.com/naassonvs" target="_blank" rel="noopener" class="direct-card">
+                <span class="direct-icon">⌨️</span>
+                <div>
+                  <div class="direct-title">GitHub</div>
+                  <div class="direct-value">/naassonvs</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="availability-card">
+              <div class="avail-dot"></div>
+              <div>
+                <div class="avail-title">Disponível para projetos</div>
+                <div class="avail-desc">Freelance, CLT e PJ — Belo Horizonte / Remoto</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-brand"><strong>Naasson Vieira</strong> — Analista de TI & Web Developer</p>
+        <div class="footer-links">
+          <a href="https://github.com/naassonvs" target="_blank" rel="noopener">
+            <img src="./img/github.svg" alt=""> GitHub
+          </a>
+          <a href="https://linkedin.com/in/naassonsilva/" target="_blank" rel="noopener">
+            <img src="./img/LinkedIn_icon.svg" alt=""> LinkedIn
+          </a>
+          <a href="https://drive.google.com/file/d/1AeGUwHYbzQUqMaveAZDWxjcj-wySji8x/view?usp=drive_link" target="_blank" rel="noopener">
+            <img src="./img/google-drive.svg" alt=""> Currículo
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Naasson Vieira · Feito com HTML, CSS e JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>
